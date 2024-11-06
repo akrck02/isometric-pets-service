@@ -1,0 +1,11 @@
+meta {
+  name: Get pet image
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://{{isopets.host}}:{{isopets.port}}/isopets/{{isopets.api.version}}/pets/{{isopets.pet.uuid}}/image
+  body: none
+  auth: none
+}
